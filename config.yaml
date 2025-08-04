@@ -1,0 +1,12 @@
+domains:
+  - name: "OpenAI"
+    url: "openai.com"
+    port: 443
+
+  - name: "Google"
+    url: "google.com"
+    port: 443
+
+alert:
+  threshold_days: 30
+  slack_webhook: "https://hooks.slack.com/services/your/webhook/url"
