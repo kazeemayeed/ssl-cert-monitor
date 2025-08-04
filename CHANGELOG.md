@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ---
 
-## [1.0.0] - 2025-08-04
+## [1.0.0]
 
 ### Initial Release
 
@@ -16,6 +16,10 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Basic error handling and logging included.
 - Fully written in Python (lightweight, dependency-minimal).
 - Ready to be scheduled via `cron` or integrated into monitoring systems.
+
+## [1.1.0]
+
+- Revised the structure for building a CLI-style script
 
 ---
 
