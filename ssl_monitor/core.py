@@ -41,12 +41,12 @@ def check_certificates(domains: List[Dict], threshold_days: int, slack_webhook: 
             logging.info(f"{domain['name']} ({domain['url']}) certificate expires in {days_left} days")
 
             if days_left <= threshold_days:
-                msg = f"⚠️ SSL certificate for *{domain['name']}* ({domain['url']}) expires in {days_left} days (on {expiry_date})."
+                msg = f"SSL certificate for *{domain['name']}* ({domain['url']}) expires in {days_left} days (on {expiry_date})."
                 send_slack_notification(msg, slack_webhook)
 
         except Exception as e:
             logging.error(f"Error checking {domain['name']} ({domain['url']}): {e}")
-            error_msg = f"❌ Error checking SSL cert for *{domain['name']}* ({domain['url']}): {e}"
+            error_msg = f"Error checking SSL cert for *{domain['name']}* ({domain['url']}): {e}"
             send_slack_notification(error_msg, slack_webhook)
 
 def main():
